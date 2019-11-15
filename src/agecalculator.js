@@ -29,7 +29,41 @@ export class User {
 
 }
 
+export class Life {
+  constructor(exercise, smoke, drink){
+    this.exercise = exercise;
+    this.smoke = smoke;
+    this.drink = drink;
+  }
 
+
+
+  get lifeExp() {
+    return this.calcLifeExp();
+  }
+  calcLifeExp() {
+    const avgLife = 78
+    return avgLife + this.exercise + this.smoke + this.drink;
+  }
+}
+
+// if
+// exercise
+// a = -2
+// b = +2
+// c = +4
+//
+// smoke
+// d = +2
+// e = -1
+// f = -4
+//
+// drink
+// g = -2
+// h = +1
+// i = +4
+// j = -2
+//
 
 
 // Take a person’s age in years and create a class that does the following:

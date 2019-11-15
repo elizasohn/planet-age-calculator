@@ -1,4 +1,6 @@
 import { User } from './../src/agecalculator.js';
+import { Life } from './../src/agecalculator.js';
+import { avgLife } from './../src/agecalculator.js';
 
 describe('Ages', () => {
 
@@ -22,7 +24,16 @@ describe('Ages', () => {
   let person1 = new User(100);
   expect(person1.jupiter).toEqual(1186);
   });
+});
 
+describe('Life Expectancy', () => {
 
-
+  test("should correctly add values to const avgLife's value of 78", () => {
+    let life1 = new Life(0, 0, 0);
+    expect(life1.lifeExp).toEqual(78);
+  });
+  test("should correctly add values to const avgLife's value of 78", () => {
+    let life1 = new Life(2, 5, 0);
+    expect(life1.lifeExp).toEqual(85);
+  });
 });
