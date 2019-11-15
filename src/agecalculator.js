@@ -20,9 +20,14 @@ export class User {
   calcMars() {
     return this.age * 1.88;
   }
+  get jupiter() {
+    return this.calcJupiter();
+  }
+  calcJupiter() {
+    return this.age * 11.86;
+  }
 
 };
-
 
 
 
