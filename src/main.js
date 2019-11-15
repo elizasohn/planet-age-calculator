@@ -31,4 +31,19 @@ $(document).ready(function(){
     });
 
   });
+  formforlife
+  smokeInput
+  exerciseInput
+  drinkInput
+  let life1 = new Life(exerciseInput, smokeInput, drinkInput);
+
 });
+// 
+// life expectancy = Life.lifeExp;
+// years left = Life.yearsLeft;
+//
+// if (Life.yearsLeft <= 0){
+//   $("#deadAlready").show();
+// } else if (Life.yearsLeft<= 0){
+//   $("#willDie").show();
+// }

@@ -1,6 +1,6 @@
 import { User } from './../src/agecalculator.js';
 import { Life } from './../src/agecalculator.js';
-import { avgLife } from './../src/agecalculator.js';
+// import { avgLife } from './../src/agecalculator.js';
 
 describe('Ages', () => {
 
@@ -35,5 +35,13 @@ describe('Life Expectancy', () => {
   test("should correctly add values to const avgLife's value of 78", () => {
     let life1 = new Life(2, 5, 0);
     expect(life1.lifeExp).toEqual(85);
+  });
+  // test("should correctly read Life as object inside User and correctly add values to const avgLife", () => {
+  //   let life1 = new Life(2, 5, 0);
+  //   expect(life1.lifeExp).toEqual(85);
+  // });
+  test("should correctly determine years left with user age and life properties", () => {
+    let life1 = new Life(2, 5, 0, 10);
+    expect(life1.yearsLeft).toEqual(85);
   });
 });
