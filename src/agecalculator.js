@@ -27,7 +27,7 @@ export class User {
     return this.age * 11.86;
   }
 
-};
+}
 
 
 
@@ -76,7 +76,7 @@ export class User {
 //     //Function body goes here.
 //   }
 //
-// BUT wouldn't it be simpler and shorter and cleaner to do something like:
+// BUT wouldn't it be simpler and shorter to do something like:
 //
 // class User {
 //   constructor(age, mercury) {
@@ -86,3 +86,5 @@ export class User {
 // };
 //
 // or is that why it's referred to as "Syntatic Sugar"? To be cleaner and more readable? Which is best practice?
+//
+// also! assuming we're using Jest although the objectives aren't consistent in the project description and later say to use Karma and Jasmine
