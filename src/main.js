@@ -3,6 +3,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { User } from './agecalculator.js';
+import { Life } from './agecalculator.js';
 
 $(document).ready(function(){
   $("form.inputForm").submit(function(event){
@@ -38,11 +39,6 @@ $(document).ready(function(){
       $('.results').hide();
     })
   });
-  formforlife
-  smokeInput
-  exerciseInput
-  drinkInput
-  let life1 = new Life(exerciseInput, smokeInput, drinkInput);
 
 });
 //
