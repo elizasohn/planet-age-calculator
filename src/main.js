@@ -9,27 +9,34 @@ $(document).ready(function(){
     event.preventDefault();
     let ageInput = $("input#age").val();
     $('.form').hide();
-    $('.results').show();
+    $('.earthResults').show();
     let newUser = new User(ageInput);
     $(".ageReturn").text(newUser.age);
 
     $("#btn-mercury").click(function(){
+      $('.planetResults').show();
       $("#planet").text("Mercury");
       $("#planetAge").text(newUser.mercury);
     });
     $("#btn-venus").click(function(){
+      $('.planetResults').show();
       $("#planet").text("Venus");
       $("#planetAge").text(newUser.venus);
     });
     $("#btn-mars").click(function(){
+      $('.planetResults').show();
       $("#planet").text("Mars");
       $("#planetAge").text(newUser.mars);
     });
     $("#btn-jupiter").click(function(){
+      $('.planetResults').show();
       $("#planet").text("Jupiter");
       $("#planetAge").text(newUser.jupiter);
     });
-
+    $("form.lifeExpForm").submit(function(event){
+      event.preventDefault();
+      $('.results').hide();
+    })
   });
   formforlife
   smokeInput
@@ -38,7 +45,7 @@ $(document).ready(function(){
   let life1 = new Life(exerciseInput, smokeInput, drinkInput);
 
 });
-// 
+//
 // life expectancy = Life.lifeExp;
 // years left = Life.yearsLeft;
 //

@@ -5,6 +5,7 @@
 </head>
 <body>
   <div class="container">
+    <!-- Age Input -->
     <div class="form">
       <form class="inputForm" action="index.html" method="post">
         <label for="age">Enter your age:</label>
@@ -12,20 +13,35 @@
         <button type="submit" id="ageEnterButton">Enter</button>
       </form>
     </div>
-    <div class="results">
+    <!-- Results -->
+    <div class="earthResults">
       <h4>Your current age is</h4>
       <h2><span class="ageReturn"></span></h2>
       Find your age on the following planets:
+      <!-- Planet Buttons -->
+      <button type="submit" name="btn-mercury" id="btn-mercury">Mercury</button>
+      <button type="button" name="btn-venus" id="btn-venus">Venus</button>
+      <button type="button" name="btn-mars" id="btn-mars">Mars</button>
+      <button type="button" name="btn-jupiter" id="btn-jupiter">Jupiter</button>
+    </div>
+      <!-- Age on Planets Results -->
+    <div class="planetResults">
+      <h4>Your age on <strong><span id="planet"></span></strong> is <span id="planetAge"></span></h4>
+
+    <!-- Life Expectancy -->
+      <h4>
+      <button type="button" name="showLifeExp" id="showLifeExp">Calculate your life expectancy</button></h4>
+    </div>
+    <!-- Life Expectancy Form -->
+    <div class="lifeExp">
+      <form class="lifeExpForm" action="index.html" method="post">
+
+      <button type="submit" name="lifeFormBtn" id="lifeFormBtn">hey</button>
       <button type="submit" name="btn-mercury" id="btn-mercury">Mercury</button>
       <button type="button" name="btn-venus" id="btn-venus">Venus</button>
       <button type="button" name="btn-mars" id="btn-mars">Mars</button>
       <button type="button" name="btn-jupiter" id="btn-jupiter">Jupiter</button>
       <h4>Your age on <strong><span id="planet"></span></strong> is <span id="planetAge"></span></h4>
-    </div>
-    <div class="lifeExp">
-      <h4>Calculate your life expectancy:</h4>
-      <form class="lifeExpForm" action="index.html" method="post">
-      
       </form>
 
     </div>
