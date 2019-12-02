@@ -68,5 +68,9 @@ describe('Life Expectancy', () => {
     let life1 = new Life(2, 5, 0, 90);
     expect(life1.lifeMessageMars).toEqual("you should be dead on Mars");
   });
+  test("life message Mars should correctly tell you how many years you have left to live based on your life expectancy on Mars", () => {
+    let life1 = new Life(2, 5, 0, 50);
+    expect(life1.lifeMessageMars).toEqual("you should die in 21.7 years");
+  });
 
 });
