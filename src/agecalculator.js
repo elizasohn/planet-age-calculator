@@ -71,6 +71,16 @@ export class Life {
       return "you should die in " + (this.yearsLeft * .24) + " years";
     }
   }
+  get lifeMessageVenus() {
+    return this.calcLifeMessageVenus();
+  }
+  calcLifeMessageVenus(){
+    if (this.yearsLeft * .62 <= 0){
+      return "you should be dead on Venus";
+    } else {
+      return "you should die in " + (this.yearsLeft * .24) + " years";
+    }
+  }
 }
 
 
