@@ -65,7 +65,7 @@ describe('Life Expectancy', () => {
     expect(life1.lifeMessageVenus).toEqual("you should die in 21.7 years");
   });
   test("life message Mars should tell you if you should be dead on Mars already", () => {
-    let life1 = new Life(2, 5, 0, 90);
+    let life1 = new Life(2, 5, 0, 22);
     expect(life1.lifeMessageMars).toEqual("you should be dead on Mars");
   });
 
