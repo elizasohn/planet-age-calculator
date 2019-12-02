@@ -58,7 +58,7 @@ export class Life {
     if (this.yearsLeft <= 0){
       return "you should be dead";
     } else {
-      return "you should die in " + this.yearsLeft + "years";
+      return "you should die in " + this.yearsLeft + " years";
     }
   }
 }
