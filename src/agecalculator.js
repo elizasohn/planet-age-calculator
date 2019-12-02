@@ -51,6 +51,16 @@ export class Life {
   calcYearsLeft() {
     return this.lifeExp - this.age;
   }
+  get lifeMessage() {
+    return this.calcLifeMessage();
+  }
+  calcLifeMessage(){
+    if (this.lifeExp - this.age <= 0){
+      return "you should be dead";
+    } else {
+      return this.yearsLeft;
+    }
+  }
 }
 
 
