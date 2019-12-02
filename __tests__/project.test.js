@@ -62,7 +62,7 @@ describe('Life Expectancy', () => {
   });
   test("life message Venus should correctly tell you how many years you have left to live based on your life expectancy on Venus", () => {
     let life1 = new Life(2, 5, 0, 50);
-    expect(life1.lifeMessageVenus).toEqual("you should die in 1.2 years");
+    expect(life1.lifeMessageVenus).toEqual("you should die in 8.4 years");
   });
 
 });
