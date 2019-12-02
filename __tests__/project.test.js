@@ -44,5 +44,9 @@ describe('Life Expectancy', () => {
     let life1 = new Life(2, 5, 0, 90);
     expect(life1.lifeMessage).toEqual("you should be dead");
   });
+  test("life message should correctly tell you how many years you have left to live based on your life expectancy", () => {
+    let life1 = new Life(2, 5, 0, 90);
+    expect(life1.lifeMessage).toEqual("you should die in 5 years");
+  });
 
 });
