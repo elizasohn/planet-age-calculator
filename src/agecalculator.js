@@ -78,7 +78,17 @@ export class Life {
     if (this.yearsLeft * .62 <= 0){
       return "you should be dead on Venus";
     } else {
-      return "you should die in " + (this.yearsLeft * .24) + " years";
+      return "you should die in " + (this.yearsLeft * .62) + " years";
+    }
+  }
+  get lifeMessageMars() {
+    return this.calcLifeMessageMars();
+  }
+  calcLifeMessageMars(){
+    if (this.yearsLeft * 1.88 <= 0){
+      return "you should be dead on Mars";
+    } else {
+      return "you should die in " + (this.yearsLeft * 1.88) + " years";
     }
   }
 }
