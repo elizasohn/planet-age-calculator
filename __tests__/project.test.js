@@ -78,6 +78,6 @@ describe('Life Expectancy', () => {
   });
   test("life message Jupiter should correctly tell you how many years you have left to live based on your life expectancy on Jupiter", () => {
     let life1 = new Life(2, 5, 0, 22);
-    expect(life1.lifeMessageJupiter).toEqual("you should die in 65.8 years");
+    expect(life1.lifeMessageJupiter).toEqual("you should die in 747.18 years");
   });
 });
