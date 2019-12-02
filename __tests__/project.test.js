@@ -41,7 +41,7 @@ describe('Life Expectancy', () => {
     expect(life1.yearsLeft).toEqual(75);
   });
   test("life message should tell you if you should already be dead", () => {
-    let life1 = new Life(2, 5, 0, 10);
+    let life1 = new Life(2, 5, 0, 90);
     expect(life1.lifeMessage).toEqual("you should be dead");
   });
 
