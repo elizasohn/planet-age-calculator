@@ -55,10 +55,10 @@ export class Life {
     return this.calcLifeMessage();
   }
   calcLifeMessage(){
-    if (this.lifeExp - this.age <= 0){
+    if (this.yearsLeft <= 0){
       return "you should be dead";
     } else {
-      return this.yearsLeft;
+      return "you should die in " + this.yearsLeft + "years";
     }
   }
 }
