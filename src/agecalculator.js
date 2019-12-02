@@ -91,6 +91,16 @@ export class Life {
       return "you should die in " + (this.yearsLeft * 1.88) + " years";
     }
   }
+  get lifeMessageJupiter() {
+    return this.calcLifeMessageJupiter();
+  }
+  calcLifeMessageJupiter(){
+    if (this.yearsLeft * 11.86 <= 0){
+      return "you should be dead on Jupiter";
+    } else {
+      return "you should die in " + (this.yearsLeft * 11.86) + " years";
+    }
+  }
 }
 
 
